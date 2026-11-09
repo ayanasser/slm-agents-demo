@@ -1,0 +1,12 @@
+[
+  {"id": 1, "lang": "en", "kind": "intent", "prompt": "I was charged twice for my order, I want my money back.", "expected": "refund"},
+  {"id": 2, "lang": "ar", "kind": "intent", "prompt": "الأوردر وصل متأخر يومين والخدمة وحشة جداً", "expected": "complaint"},
+  {"id": 3, "lang": "ar", "kind": "intent", "prompt": "عايز أحجز ترابيزة لـ 4 أشخاص يوم الخميس", "expected": "booking"},
+  {"id": 4, "lang": "en", "kind": "extract", "prompt": "Invoice from Omar Hassan dated 2026-11-03 for 1,250 EGP.", "expected": {"name": "Omar Hassan", "date": "2026-11-03", "amount": "1250"}},
+  {"id": 5, "lang": "ar", "kind": "extract", "prompt": "فاتورة باسم منى علي بتاريخ 2026-10-28 بمبلغ 870 جنيه", "expected": {"name": "منى علي", "date": "2026-10-28", "amount": "870"}},
+  {"id": 6, "lang": "en", "kind": "tool", "prompt": "Book a meeting with Sara tomorrow at 10am about the Q4 budget.", "expected": {"tool": "create_event", "args": ["attendee", "time"]}},
+  {"id": 7, "lang": "ar", "kind": "tool", "prompt": "احجز اجتماع مع سارة بكرة الساعة 10 الصبح", "expected": {"tool": "create_event", "args": ["attendee", "time"]}},
+  {"id": 8, "lang": "en", "kind": "tool", "prompt": "Remind me to send the invoice on Friday at 3pm.", "expected": {"tool": "create_reminder", "args": ["text", "time"]}},
+  {"id": 9, "lang": "en", "kind": "plan", "prompt": "Our support agent misroutes 20% of Arabic tickets. Propose a 3-step plan to fix it.", "expected": null},
+  {"id": 10, "lang": "ar", "kind": "plan", "prompt": "إزاي أقلل تكلفة الـ agent بتاعنا من غير ما الجودة تقل؟ اديني خطة من 3 خطوات", "expected": null}
+]
